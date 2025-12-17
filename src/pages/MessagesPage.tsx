@@ -67,7 +67,7 @@ const conversations: Conversation[] = [
 
 const MessagesPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedConversation, setSelectedConversation] = useState<number | null>(null);
+  const [, setSelectedConversation] = useState<number | null>(null);
 
   const filteredConversations = conversations.filter(c =>
     c.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
